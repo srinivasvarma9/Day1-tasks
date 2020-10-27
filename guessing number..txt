@@ -1,0 +1,11 @@
+import random
+
+guessingnumber = random.randrange(1,100)
+print(guessingnumber)
+guess = int(input('Enter the number that you are guessing: '))
+if guess == guessingnumber:
+    print('perfectly matched')
+elif guess < guessingnumber:
+        print('your guess is lower')
+else:
+        print('your guess is higher')
